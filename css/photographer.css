@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100.. 1000&display=swap');
+
 #contact_modal {
     display: none;
 }
@@ -73,4 +75,108 @@ form input {
     height: 68px;
     border: none;
     border-radius: 5px;
+}
+
+.image img {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+
+}
+
+article h2 {
+    color: #D3573C;
+
+    font-family: "DM Sans";
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+article h3 {
+    color: #901C1C;
+
+    font-family: "DM Sans";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 16px;
+}
+
+article p {
+    color: #525252;
+
+    font-family: "DM Sans";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.photograph-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 50px 0px 50px;
+}
+
+.triez {
+    margin: 20px 100px
+}
+
+.divgalerie {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 72px;
+}
+
+.imggalerie {
+    height: 350px;
+    width: 350px;
+}
+
+.imagegalerie {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.imggalerie h4 {
+    color: #901C1C;
+
+    font-family: "DM Sans";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.imggalerie {
+    color: #901C1C;
+
+    text-align: right;
+    font-family: "DM Sans";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.titregalerie {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.divcoeur {
+    display: flex;
+    align-items: center;
+}
+
+.divcoeur p {
+    margin-left: 7px
 }

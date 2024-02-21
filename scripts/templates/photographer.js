@@ -7,9 +7,12 @@ function photographerTemplate(data) {
       const article = document.createElement("article");
       const img = document.createElement("img");
       img.setAttribute("src", picture);
+      const a = document.createElement('a');
+      
+      a.appendChild(img);
       const h2 = document.createElement("h2");
       h2.textContent = name;
-      article.appendChild(img);
+      article.appendChild(a);
       article.appendChild(h2);
       const h3 = document.createElement("h3");
       h3.textContent = city + ", " + country;
@@ -20,10 +23,8 @@ function photographerTemplate(data) {
       const span = document.createElement("span");
       span.textContent = price + '€/jour';
       article.appendChild(span);
-      const a = document.createElement('a');
-      a.textContent = name;
-      a.href = 'photographer.html?id=' + id;
-      article.appendChild(a);
+      a.href = 'photographer.html?id=' + id + '&name=' + name;
+    
       return article;
   }
   return { name, id, city, country, picture, tagline, price, getUserCardDOM };
@@ -32,4 +33,3 @@ function photographerTemplate(data) {
 
 
 }
-console.log('template')
