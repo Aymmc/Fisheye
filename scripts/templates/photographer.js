@@ -8,7 +8,6 @@ function photographerTemplate(data) {
       const img = document.createElement("img");
       img.setAttribute("src", picture);
       const a = document.createElement('a');
-      
       a.appendChild(img);
       const h2 = document.createElement("h2");
       h2.textContent = name;
@@ -24,10 +23,9 @@ function photographerTemplate(data) {
       span.textContent = price + '€/jour';
       article.appendChild(span);
       a.href = 'photographer.html?id=' + id + '&name=' + name;
-    
       return article;
   }
-  return { name, id, city, country, picture, tagline, price, getUserCardDOM };
+  return { name, id, city, country, picture, tagline, price, portrait, getUserCardDOM };
 
   
 
